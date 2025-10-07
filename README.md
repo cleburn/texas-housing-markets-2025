@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏠 Texas Housing Markets 2025 – Data Query & Visualization
 
 ## Overview
@@ -27,4 +26,4 @@ This notebook queries real economic data from the **Federal Reserve (FRED)** to 
 =======
 # texas-housing-markets
 intro to API data retreival, data normalization, analytical visualization
->>>>>>> c12f0b75e2a6d6967c21aa3b417328dc09ca9ffb
+
