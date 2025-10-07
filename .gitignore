@@ -1,0 +1,13 @@
+# Jupyter auto-generated files
+.ipynb_checkpoints/
+
+# Anaconda project folders
+anaconda_projects/
+
+# Python cache / compiled files
+__pycache__/
+*.pyc
+
+# System and editor files
+.DS_Store
+*.swp
