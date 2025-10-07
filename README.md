@@ -24,6 +24,3 @@ This notebook queries real economic data from the **Federal Reserve (FRED)** to 
 - Add Texas rental data from Data.gov  
 - Compute a “Texas Housing Affordability Index” combining price, income, and mortgage rate data.
 =======
-# texas-housing-markets
-intro to API data retreival, data normalization, analytical visualization
-
