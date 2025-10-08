@@ -24,3 +24,6 @@ __pycache__/
 venv/
 .env/
 .env.bak/
+
+# Ignore Jupyter Lab virtual document folders
+.virtual_documents/
