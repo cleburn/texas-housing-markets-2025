@@ -4,7 +4,7 @@
 ---
 
 ## 📘 Overview
-This repository is part of the **AI Engineer Roadmap (Month 1 – Week 2)** and serves as a real-world exercise in **NumPy and Pandas fluency**, applied to authentic Texas housing market data.
+This repository is part of my **AI Engineer Roadmap (Month 1 – Week 2)** and serves as a real-world exercise in **NumPy and Pandas fluency**, applied to authentic Texas housing market data.
 
 The current focus is on analyzing **rental trends from 2015–2025** using Zillow’s **Zillow Observed Rent Index (ZORI)**.  
 Our objective: to explore how Texas rental markets responded to the **2020 pandemic**, whether a **market correction** has occurred, and what **trajectory** appears most likely for the years ahead.
@@ -96,7 +96,7 @@ df_yearly['YoY_%'] = df_yearly.groupby('RegionName')['ZORI'].pct_change() * 100
 
 ## 🧭 Alignment with Long-Term Goals
 This project directly contributes to the **Month 1 Capstone: “Texas Real Estate Investment Analyzer.”**  
-By completing this phase, you’ll establish a solid foundation for modeling housing costs, income ratios, and affordability trends—skills essential for both **AI-driven analytics** and **data-backed investment strategy**.
+By completing this phase, I'll establish a solid foundation for modeling housing costs, income ratios, and affordability trends—skills essential for both **AI-driven analytics** and **data-backed investment strategy**.
 
 ---
 
