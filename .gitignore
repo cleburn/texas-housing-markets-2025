@@ -11,3 +11,16 @@ __pycache__/
 # System and editor files
 .DS_Store
 *.swp
+# Ignore Jupyter checkpoints and system files
+.ipynb_checkpoints/
+*.ipynb_autosave
+.DS_Store
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.tmp
+*.log
+venv/
+.env/
+.env.bak/
