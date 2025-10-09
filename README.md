@@ -54,10 +54,7 @@ texas-housing-markets-2025/
 Converted the dataset from *wide → long* format using `pd.melt()`, creating a tidy time series for all U.S. metros.
 
 ### 2. Filter for Texas Metros
-```python
-focus_metros = ['Austin, TX', 'Dallas, TX', 'Houston, TX', 'San Antonio, TX']
-tx_focus = df_long[df_long['RegionName'].isin(focus_metros)]
-```
+['Austin, TX', 'Dallas, TX', 'Houston, TX', 'San Antonio, TX']
 
 ### 3. Visualize Baseline Trends
 Created multi-line plots for the four major metros showing 2015–2025 rental trajectories.
