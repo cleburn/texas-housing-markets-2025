@@ -7,7 +7,7 @@
 This repository is part of my **AI Engineer Roadmap (Month 1 – Week 2)** and serves as a real-world exercise in **NumPy + Pandas fluency**, applied to authentic Zillow housing market data for Texas metros.
 
 The focus has now expanded beyond initial cleaning and visualization into **pandemic-period annotation, growth differentials, and forward forecasting**.  
-Through this exploration, the project begins bridging the gap between *descriptive analytics* (what happened) and *predictive modeling* (what might happen next).
+This exploration bridges the gap between descriptive analytics (what happened) and predictive modeling (what’s likely ahead).
 
 Ultimately, this work contributes toward building a **Texas Housing Affordability Index**, integrating rent, income, and mortgage trends.
 
@@ -19,7 +19,7 @@ texas-housing-markets-2025/
 │
 ├── notebooks/
 │   ├── Texas_Rent_Trends_Analysis_2015_2025.ipynb      # Original ZORI analysis & annual summaries
-│   └── texas_housing_trends_analysis.ipynb              # Annotated pandemic visuals + forecasting models
+│   └── texas_housing_trends_analysis.ipynb              # Annotated pandemic visuals + forecasting models (Austin + all metros)
 │
 ├── data/
 │   ├── raw/
@@ -28,11 +28,16 @@ texas-housing-markets-2025/
 │       └── texas_rent_trends_yearly.csv                 # Aggregated + YoY data (clean output)
 │
 ├── visuals/
-│   ├── zori_trends_texas.png                            # Base rent index plot
+│   ├── zori_trends_texas.png                            # Baseline rent index plot (2015–2025)
 │   ├── yoy_rent_growth_texas.png                        # Year-over-year rent growth visualization
-│   ├── texas_pandemic_annotation.png                    # 2020–2022 shaded annotation
-│   ├── texas_growth_differentials.png                   # Pre- vs post-pandemic growth bar chart
-│   └── austin_forecast_comparison.png                   # Linear vs exponential forecast example
+│   ├── texas_pandemic_annotation.png                    # 2020–2022 shaded pandemic impact chart
+│   ├── texas_growth_differentials.png                   # Pre- vs post-pandemic growth comparison
+│   ├── austin_forecast_comparison.png                   # Linear vs exponential forecast for Austin
+│   ├── austin_tx_holt_forecast.png                      # Austin exponential smoothing forecast (2025–2028)
+│   ├── dallas_tx_holt_forecast.png                      # Dallas exponential smoothing forecast (2025–2028)
+│   ├── houston_tx_holt_forecast.png                     # Houston exponential smoothing forecast (2025–2028)
+│   ├── san_antonio_tx_holt_forecast.png                 # San Antonio exponential smoothing forecast (2025–2028)
+│   └── forecast_all_texas.png                           # Combined 2×2 grid of all metro forecasts
 │
 └── README.md
 ```
@@ -74,21 +79,25 @@ The contrast between these models demonstrates how **model choice encodes assump
 
 ---
 
-## 🔍 Key Takeaways
-- **Pandemic shock (2020–2022)** produced the steepest rent inflation in modern Texas history.  
-- Post-2023 data indicates **softening demand** and **partial normalization**.  
-- **Linear models** capture broad trajectory but miss inflection points.  
-- **Exponential smoothing** adapts to short-term corrections, showing potential price stabilization or mild decline.  
-- Defining **clear analytical questions** before modeling is essential:  
-  > “Which pandemic-era effects will persist, and which will revert to pre-trend behavior?”
+### 📊 Results Summary & Reflections  
 
----
+Across four major Texas metros, the exponential-smoothing models captured near-term market behavior more responsively than the linear baseline:  
 
-## 🚀 Next Steps
-1. Integrate **Texas income + mortgage-rate datasets** to begin a prototype **Affordability Index**.  
-2. Extend exponential models to all four metros for side-by-side comparison.  
-3. Save finalized charts to `/visuals` and document within notebooks.  
-4. Summarize results in a technical report or blog-style README section.  
+| Metro | 2019 → 2024 % Change | Near-Term Trend (2025–2028) | Observation |
+|-------|----------------------|------------------------------|--------------|
+| Austin | ≈ +37 % | Slight softening → plateau | Pandemic surge moderating but remains above trend |
+| Dallas | ≈ +42 % | Gradual cool-down | Maintains strong upward momentum |
+| Houston | ≈ +29 % | Stable → mild growth | Less volatile market response |
+| San Antonio | ≈ +24 % | Steady low growth | Consistent affordability advantage |
+
+**Key Insights**
+- Exponential smoothing emphasizes recent corrections, revealing early signs of stabilization across Texas rental markets.  
+- Linear models offer a useful long-run anchor but can’t adapt to post-pandemic deceleration.  
+- Pandemic (2020–22) remains the clear structural break point for Texas housing costs.  
+- 2023–25 data suggests markets are normalizing rather than reverting fully to pre-trend levels.  
+
+**Reflection**
+This week deepened my fluency with NumPy and Pandas for time-series work, expanded my understanding of forecasting models in practice, and reinforced how data-driven storytelling bridges technical and business insight. Completing the multi-city pipeline and automated chart generation marks the first fully-reproducible data product in my AI Engineer roadmap. 
 
 ---
 
@@ -115,9 +124,9 @@ It demonstrates practical command of **data cleaning, EDA, visualization, and si
 |------|---------|-------------|
 | Oct 6 2025 | Initial Commit | Repo created with baseline structure. |
 | Oct 7 2025 | ZORI Integration | Added raw dataset + first analysis notebook. |
-| Oct 7 2025 | Visualization & YoY Analysis | Created annual summaries + growth plots. |
+| Oct 8 2025 | Visualization & YoY Analysis | Created annual summaries + growth plots. |
 | Oct 9 2025 | Forecasting Phase Added | Annotated 2020–2022 period, quantified pre/post growth, implemented linear + exponential forecasts, and added new visuals. |
-| Upcoming | Affordability Index Integration | Merge rent + income + mortgage data to compute Texas Affordability Index. |
+| Oct 10 2025 | Multi-City Forecast Expansion | Added Holt Exponential Smoothing for all four metros + combined visualization grid.|
 
 ---
 
