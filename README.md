@@ -28,9 +28,6 @@ texas-housing-markets-2025/
 │       └── texas_rent_trends_yearly.csv                 # Aggregated + YoY data (clean output)
 │
 ├── visuals/
-│   ├── zori_trends_texas.png                            # Baseline rent index plot (2015–2025)
-│   ├── yoy_rent_growth_texas.png                        # Year-over-year rent growth visualization
-│   ├── texas_pandemic_annotation.png                    # 2020–2022 shaded pandemic impact chart
 │   ├── texas_growth_differentials.png                   # Pre- vs post-pandemic growth comparison
 │   ├── austin_forecast_comparison.png                   # Linear vs exponential forecast for Austin
 │   ├── austin_tx_holt_forecast.png                      # Austin exponential smoothing forecast (2025–2028)
