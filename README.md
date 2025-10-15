@@ -21,12 +21,6 @@ texas-housing-markets-2025/
 │   ├── Texas_Rent_Trends_Analysis_2015_2025.ipynb      # Original ZORI analysis & annual summaries
 │   └── texas_housing_trends_analysis.ipynb              # Annotated pandemic visuals + forecasting models (Austin + all metros)
 │
-├── data/
-│   ├── raw/
-│   │   └── Metro_zori_uc_sfrcondomfr_sm_month.csv       # Zillow ZORI dataset (public CSV)
-│   └── processed/
-│       └── texas_rent_trends_yearly.csv                 # Aggregated + YoY data (clean output)
-│
 ├── visuals/
 │   ├── texas_growth_differentials.png                   # Pre- vs post-pandemic growth comparison
 │   ├── austin_forecast_comparison.png                   # Linear vs exponential forecast for Austin
