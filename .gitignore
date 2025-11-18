@@ -11,6 +11,7 @@ __pycache__/
 # System and editor files
 .DS_Store
 *.swp
+.claude/
 # Ignore Jupyter checkpoints and system files
 .ipynb_checkpoints/
 *.ipynb_autosave
