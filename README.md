@@ -23,4 +23,4 @@ Python · Pandas · NumPy · Matplotlib · Scikit-learn · Statsmodels
 
 ## Data Source
 
-[Zillow ZORI](https://www.zillow.com/research/data/) - Observed Rent Index by metro
+[Zillow ZORI](https://www.zillow.com/research/data/) - Observed Rent Index by metro/city
